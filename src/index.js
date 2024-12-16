@@ -1,6 +1,7 @@
 import express from 'express'
 import { application } from './config'
 import connect from './config/database'
+import { University } from './models/university'
 
 // Import the middlewares from the configuration file.
 import { middlewares } from './config/middlewares'
