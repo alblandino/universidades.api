@@ -10,6 +10,9 @@
     "prepare": "husky install",
     "commitlint": "commitlint --edit"
   },
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
