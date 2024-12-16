@@ -16,6 +16,7 @@ const universitySchema = new mongoose.Schema({
     acronym: { type: String, required: true, trim: true},
     is_deleted: { type: Boolean, default: false }, // Soft delete
     costs: { type: [costsSchema], default: [] },
+    metadata: { type: Array, default: [] },
     created_at: { type: Date, default: Date.now },
     updated_at: { type: Date, default: null },
     deleted_at: { type: Date, default: null }, // Soft delete
